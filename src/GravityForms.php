@@ -50,16 +50,16 @@ class GravityForms
             $title  = __('Form submission:', 'gdpr') . ' ' . $form['title'];
             $fields = $this->getFormFields($form);
 
-            foreach ($entries as $entry) {
+            foreach ($entries as $i => $entry) {
 
                 foreach ($fields as $field) {
-                    $data[$title][$field['label']] = $entry[$field['id']];
+                    $data[$title][$i][$field['label']] = $entry[$field['id']];
                 }
 
-                $data[$title]['date']       = $entry['date_created'];
-                $data[$title]['ip']         = $entry['ip'];
-                $data[$title]['url']        = $entry['source_url'];
-                $data[$title]['user_agent'] = $entry['user_agent'];
+                $data[$title][$i]['date']       = $entry['date_created'];
+                $data[$title][$i]['ip']         = $entry['ip'];
+                $data[$title][$i]['url']        = $entry['source_url'];
+                $data[$title][$i]['user_agent'] = $entry['user_agent'];
             }
         }
 

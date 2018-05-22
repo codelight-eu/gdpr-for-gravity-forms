@@ -4,7 +4,7 @@
  * Plugin Name:       Gravity Forms: GDPR Add-On
  * Plugin URI:        https://codelight.eu/wordpress-gdpr-framework/
  * Description:       The easiest way to make your Gravity Forms GDPR-compliant. Fully documented, extendable and developer-friendly.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Codelight
  * Author URI:        https://codelight.eu/
  * Text Domain:       gdpr
